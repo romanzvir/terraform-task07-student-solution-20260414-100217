@@ -4,12 +4,12 @@ provider "azurerm" {
 
 import {
   to = azurerm_resource_group.azure_rg
-  id = var.rg_id
+  id = "/subscriptions/b040b496-224e-4d54-9183-51300e21cc76/resourceGroups/cmtr-9ymkrske-mod7-rg"
 }
 
 import {
   to = azurerm_storage_account.st_acc
-  id = var.sa_id
+  id = "/subscriptions/b040b496-224e-4d54-9183-51300e21cc76/resourceGroups/cmtr-9ymkrske-mod7-rg/providers/Microsoft.Storage/storageAccounts/cmtr9ymkrskemod7sa"
 }
 
 resource "azurerm_resource_group" "azure_rg" {
